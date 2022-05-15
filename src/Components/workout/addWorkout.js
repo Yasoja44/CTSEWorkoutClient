@@ -130,7 +130,7 @@ class addWorkout extends Component {
             SubmissionFail2(message);
         } else {
             console.log('DATA TO SEND', workout)
-            axios.post('http://10.76.5.100:5000/workout/',workout)
+            axios.post('/workout/',workout)
                 .then(response => {
                     SubmissionAlert();
 
